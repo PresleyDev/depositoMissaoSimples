@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depósito Missão</title>
+    <link rel="icon" href="./img/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./img/favicon-192x192.png">
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/tokens.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a class="logo__link" href="#">
+                <img
+                    class="site-logo"
+                    src="./img/logo-missao.png"
+                    alt="Depósito Missão"
+                    width="300"
+                    height="100">
+            </a>
+        </div>
+
+        <nav class="nav" aria-label="Navegação principal">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="carousel" aria-label="Ofertas em destaque">
+        <div class="carousel-track">
+            <img src="./img/banner1_tintas.jpg" alt="Promoção de tintas">
+            <img src="./img/banner2_pisos.jpg" alt="Promoção de pisos">
+            <img src="./img/banner3_ferramentas.jpg" alt="Promoção de ferramentas">
+        </div>
+
+        <button class="prev" type="button" aria-label="Banner anterior">
+
+        </button>
+
+        <button class="next" type="button" aria-label="Próximo banner">
+
+        </button>
+    </section>
+
+    <main>
+        <section class="produtos">
+            <h2>Produtos em destaque</h2>
+            <p id="status-carrinho" aria-live="polite" role="status"></p>
+
+            <div id="lista-produtos" class="grade-produtos">
+                <!-- O TypeScript adiciona os produtos aqui -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__columns">
+                <section class="footer__brand" aria-labelledby="footer-title">
+                    <h2 class="footer__title" id="footer-title">Depósito Missão</h2>
+                    <img
+                        class="footer__logo"
+                        src="./img/logo-missao.png"
+                        alt="Logo do Depósito Missão, com uma onça"
+                        width="220"
+                        height="100">
+                    <p class="footer__description">
+                        Materiais para construção para ajudar você em cada etapa da sua obra.
+                    </p>
+                    <nav class="footer__social" aria-label="Redes sociais">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a class="footer__social-link" href="https://x.com/?lang=pt" aria-label="X do Depósito Missão">
+                                    <img class="footer__social-icon" src="./img/icon-twitter.svg" alt="" aria-hidden="true" width="20" height="20">
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__social-link" href="https://www.instagram.com/?hl=pt-br" aria-label="Instagram do Depósito Missão">
+                                    <img class="footer__social-icon" src="./img/icon-instagram.svg" alt="" aria-hidden="true" width="20" height="20">
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__social-link" href="http://facebook.com/?locale=pt_BR" aria-label="Facebook do Depósito Missão">
+                                    <img class="footer__social-icon" src="./img/icon-facebook.svg" alt="" aria-hidden="true" width="20" height="20">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <nav class="footer__navigation" aria-labelledby="footer-navigation-title">
+                    <h2 class="footer__subtitle" id="footer-navigation-title">Navegação</h2>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#lista-produtos">Produtos em destaque</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <section class="footer__service" aria-labelledby="footer-service-title">
+                    <h2 class="footer__subtitle" id="footer-service-title">Atendimento</h2>
+                    <div class="footer__service-group">
+                        <h3 class="footer__label">Contato</h3>
+                        <a class="footer__whatsapp-link" href="https://wa.me/5511983160974" aria-label="WhatsApp do Depósito Missão: (11) 98316-0974">
+                            <img class="footer__whatsapp-icon" src="./img/icon-whatsapp.svg" alt="" aria-hidden="true" width="20" height="20">
+                            <span>(11) 98316-0974</span>
+                        </a>
+                    </div>
+                    <div class="footer__service-group">
+                        <h3 class="footer__label">Horários de atendimento</h3>
+                        <p class="footer__schedule-text">Segunda a sexta, das 07h00 às 18h00.</p>
+                    </div>
+                </section>
+
+                <section class="footer__location" aria-labelledby="footer-location-title">
+                    <h2 class="footer__subtitle" id="footer-location-title">Endereço</h2>
+                    <address class="footer__address">
+                        <a
+                            class="footer__address-link"
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Avenida%20dos%20Ourives%2C%20980%2C%20Jardim%20S%C3%A3o%20Sav%C3%A9rio%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004194-260"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Av. dos Ourives, 980 - Jardim São Savério, São Paulo - SP, CEP 04194-260
+                        </a>
+                    </address>
+                    <iframe
+                        class="footer__map"
+                        title="Localização do Depósito Missão"
+                        src="https://www.google.com/maps?q=Avenida%20dos%20Ourives%2C%20980%2C%20Jardim%20S%C3%A3o%20Sav%C3%A9rio%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004194-260&amp;output=embed"
+                        width="600"
+                        height="220"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                    <!-- TODO: fornecer a URL oficial compartilhável da localização para adicionar o link “Como chegar”. -->
+                </section>
+            </div>
+
+            <section class="footer__payments" aria-labelledby="footer-payments-title">
+                <h2 class="footer__subtitle" id="footer-payments-title">Formas de pagamento</h2>
+                <ul class="footer__payment-list" aria-label="Formas de pagamento aceitas">
+                    <li>
+                        <img src="./img/formaPagamentoBandeiraVisa.png" alt="Visa" width="1254" height="1254" loading="lazy">
+                    </li>
+                    <li>
+                        <img src="./img/formaPagamentoBandeiraMastercard.png" alt="Mastercard" width="1254" height="1254" loading="lazy">
+                    </li>
+                    <li>
+                        <img src="./img/formaPagamentoBandeiraElo.png" alt="Elo" width="1254" height="1254" loading="lazy">
+                    </li>
+                    <li>
+                        <img src="./img/formaPagamentoPix.png" alt="Pix" width="1254" height="1254" loading="lazy">
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="footer__copyright">
+            <p>&copy; 2026 Depósito Missão. Todos os direitos reservados.</p>
+            <p class="footer__developer">
+                Desenvolvido por
+                <a
+                    class="footer__link"
+                    href="https://www.instagram.com/presley.r14/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Presley Vasconcelo
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <template id="template-produto">
+        <article class="produto">
+            <a class="produto__link" href="#">
+                <img class="produto__imagem" src="" alt="" loading="lazy" />
+
+                <h3 class="produto__nome"></h3>
+            </a>
+
+            <p class="produto__preco"></p>
+
+            <button class="produto__botao" type="button">
+                Adicionar ao carrinho
+            </button>
+        </article>
+    </template>
+
+    <script src="./js/carousel.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

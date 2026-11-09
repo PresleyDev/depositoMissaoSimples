@@ -1,0 +1,13 @@
+.carousel-track {
+    transition: transform 0.5s ease-in-out;
+}
+
+.prev,
+.next {
+    transition: all 0.25s ease-in-out;
+}
+
+.prev::before,
+.next::after {
+    transition: transform 0.2s ease;
+}
